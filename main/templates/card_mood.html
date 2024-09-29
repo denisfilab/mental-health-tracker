@@ -34,8 +34,11 @@
 							<span
 								class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-indigo-600 bg-indigo-200"
 							>
-								{% if mood_entry.mood_intensity > 10 %}10+{%
-								else %}{{mood_entry.mood_intensity}}{% endif %}
+								{% if mood_entry.mood_intensity > 10 %}
+								10+
+							{% else %}
+								{{ mood_entry.mood_intensity }}
+							{% endif %}
 							</span>
 						</div>
 					</div>

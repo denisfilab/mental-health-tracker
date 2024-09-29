@@ -46,8 +46,9 @@
 	</div>
 	{% else %}
 	<div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6 w-full">
-		{% for mood_entry in mood_entries %} {% include 'card_mood.html' with
-		mood_entry=mood_entry %} {% endfor %}
+		{% for mood_entry in mood_entries %} 
+		{% include 'card_mood.html' with mood_entry=mood_entry %} 
+		{% endfor %}
 	</div>
 	{% endif %}
 </div>
